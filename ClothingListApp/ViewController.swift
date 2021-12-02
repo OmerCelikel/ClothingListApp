@@ -12,6 +12,8 @@ import CoreData
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
+    var nameArray = [String]()
+    var idArray = [UUID]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,6 +22,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         
         navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addButtonClicked))
+        //call functions
+        takeData()
     }
     
     
@@ -35,11 +39,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             // results are empty list NSManagedObkect uses when Core Date uses
             let results = try context.fetch(fetchRequest)
             for result in results as! [NSManagedObject]{
-                //gives NSManagedObject
-                //result.value(forKey: <#T##String#>)
-                let name = result.value(forkey: "name") as? String
-                print(name)
+                //gives NSManagedObject  .value(forkey: "name") as? String
+                if let name = result.value(forKey: "name") as? String {
+                    //print(name)
+                    nameArray.append(name)
+                }
+                
+                if let id = result.value(forKey: "id") as? UUID {
+                    //print(name)
+                    idArray.append(id)
+                }
+                
             }
+            // update data
+            tableView.reloadData()
         } catch{
             print("there is a error")
         }
@@ -53,12 +66,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return nameArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Text"
+        cell.textLabel?.text = nameArray[indexPath.row]
         return cell
     }
 
