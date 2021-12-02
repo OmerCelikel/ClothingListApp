@@ -14,6 +14,7 @@
 		F6CFC96D275890A700E5A7E7 /* ClothingListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6CFC96B275890A700E5A7E7 /* ClothingListApp.xcdatamodeld */; };
 		F6CFC96F275890A700E5A7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CFC96E275890A700E5A7E7 /* Assets.xcassets */; };
 		F6CFC972275890A700E5A7E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CFC970275890A700E5A7E7 /* LaunchScreen.storyboard */; };
+		F6CFC97A27589AAD00E5A7E7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CFC97927589AAD00E5A7E7 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F6CFC96E275890A700E5A7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6CFC971275890A700E5A7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6CFC973275890A700E5A7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6CFC97927589AAD00E5A7E7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F6CFC970275890A700E5A7E7 /* LaunchScreen.storyboard */,
 				F6CFC973275890A700E5A7E7 /* Info.plist */,
 				F6CFC96B275890A700E5A7E7 /* ClothingListApp.xcdatamodeld */,
+				F6CFC97927589AAD00E5A7E7 /* DetailsViewController.swift */,
 			);
 			path = ClothingListApp;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				F6CFC96D275890A700E5A7E7 /* ClothingListApp.xcdatamodeld in Sources */,
 				F6CFC963275890A700E5A7E7 /* AppDelegate.swift in Sources */,
 				F6CFC965275890A700E5A7E7 /* SceneDelegate.swift in Sources */,
+				F6CFC97A27589AAD00E5A7E7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
