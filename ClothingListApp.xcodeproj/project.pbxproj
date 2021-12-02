@@ -63,12 +63,12 @@
 				F6CFC962275890A700E5A7E7 /* AppDelegate.swift */,
 				F6CFC964275890A700E5A7E7 /* SceneDelegate.swift */,
 				F6CFC966275890A700E5A7E7 /* ViewController.swift */,
+				F6CFC97927589AAD00E5A7E7 /* DetailsViewController.swift */,
 				F6CFC968275890A700E5A7E7 /* Main.storyboard */,
 				F6CFC96E275890A700E5A7E7 /* Assets.xcassets */,
 				F6CFC970275890A700E5A7E7 /* LaunchScreen.storyboard */,
 				F6CFC973275890A700E5A7E7 /* Info.plist */,
 				F6CFC96B275890A700E5A7E7 /* ClothingListApp.xcdatamodeld */,
-				F6CFC97927589AAD00E5A7E7 /* DetailsViewController.swift */,
 			);
 			path = ClothingListApp;
 			sourceTree = "<group>";
